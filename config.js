@@ -4,12 +4,12 @@
 
 const CONFIG = {
   // Main details
-  recipientName: "Kimmy",
-  senderName: "Your Name",
-  password: "1234",
+  recipientName: "Baby Enaa",
+  senderName: "Aweng",
+  password: "1409",
 
   // Opening screen
-  introTitle: "For You, Kimmy",
+  introTitle: "For You, Ainaa Nur Nabihah",
   introSubtitle: "I made a little something for you ♡",
 
   // Birthday section
