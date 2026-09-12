@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Surprise ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hearts"></div>
+
+  <section id="lockScreen" class="screen active">
+    <div class="glass intro-card">
+      <div class="sparkle">✦</div>
+      <h1 id="introTitle"></h1>
+      <p id="introSubtitle"></p>
+      <div class="lock">♡</div>
+      <input id="password" type="password" placeholder="Enter password">
+      <button onclick="unlock()">Open My Surprise</button>
+      <p id="wrong" class="wrong"></p>
+    </div>
+  </section>
+
+  <main id="mainContent" class="hidden">
+    <section class="hero section">
+      <div class="stars"></div>
+      <div class="hero-content">
+        <p class="eyebrow">A little surprise for you</p>
+        <h1 id="birthdayTitle"></h1>
+        <p id="birthdayText"></p>
+        <button class="music-btn" onclick="toggleMusic()">♫ <span id="musicText">Play our song</span></button>
+      </div>
+      <div class="scroll">scroll ↓</div>
+    </section>
+
+    <section class="section letter-section">
+      <div class="glass letter">
+        <p class="eyebrow">from me, to you</p>
+        <h2 id="letterTitle"></h2>
+        <div id="letterText" class="letter-text"></div>
+      </div>
+    </section>
+
+    <section class="section memories-section">
+      <p class="eyebrow">little moments</p>
+      <h2 id="memoriesTitle"></h2>
+      <p id="memoriesSubtitle" class="subtitle"></p>
+      <div id="gallery" class="gallery"></div>
+    </section>
+
+    <section class="section playlist-section">
+      <div class="glass playlist-card">
+        <p class="eyebrow">press play</p>
+        <h2 id="playlistTitle"></h2>
+        <p id="playlistSubtitle"></p>
+        <div class="record" id="record">♫</div>
+        <button class="play-big" onclick="toggleMusic()">▶</button>
+        <p class="song-name" id="songName"></p>
+      </div>
+    </section>
+
+    <section class="section final-section">
+      <div class="final-content">
+        <div class="floating-heart">♡</div>
+        <h2 id="finalTitle"></h2>
+        <p id="finalText"></p>
+        <p class="signature">— <span id="senderName"></span></p>
+      </div>
+    </section>
+  </main>
+
+  <audio id="music" loop></audio>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
